@@ -34,8 +34,8 @@
     },
     "lint-staged": {
         "*.ts": [
-            "format:fix",
-            "lint:fix"
+            "npm run format:fix",
+            "npm run lint:fix"
         ]
     }
 }

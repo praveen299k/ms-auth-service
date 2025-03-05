@@ -14,7 +14,7 @@ export default tseslint.config(
             },
         },
         rules: {
-            'dot-notation': 'error',
+            // 'dot-notation': 'error',
         },
     },
     {
