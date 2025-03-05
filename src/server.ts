@@ -1,5 +1,8 @@
-function welcome(message: string) {
-    console.log(`Hello, ${message}`)
+function welcome() {
+    const users = {
+        name: 'praveen',
+    }
+    console.log(users.name)
 }
 
-welcome('Anchal')
+welcome()
