@@ -1,35 +1,41 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "user management service.",
-  "homepage": "https://github.com/praveen299k/ms-auth-service#readme",
-  "bugs": {
-    "url": "https://github.com/praveen299k/ms-auth-service/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/praveen299k/ms-auth-service.git"
-  },
-  "license": "ISC",
-  "author": "Praveen Kanwar <praveen.299k@gmail.com>",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "format:check": "npx prettier . --check",
-    "format:fix": "npx prettier . --write",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/node": "^22.13.9",
-    "eslint": "^9.21.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "prettier": "3.5.3",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.26.0"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "user management service.",
+    "homepage": "https://github.com/praveen299k/ms-auth-service#readme",
+    "bugs": {
+        "url": "https://github.com/praveen299k/ms-auth-service/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/praveen299k/ms-auth-service.git"
+    },
+    "license": "ISC",
+    "author": "Praveen Kanwar <praveen.299k@gmail.com>",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "format:check": "npx prettier . --check",
+        "format:fix": "npx prettier . --write",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "@types/node": "^22.13.9",
+        "eslint": "^9.21.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.3",
+        "prettier": "3.5.3",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.26.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "format:fix",
+            "lint:fix"
+        ]
+    }
 }
