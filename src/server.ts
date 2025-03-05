@@ -1,8 +1,3 @@
-function welcome() {
-    const users = {
-        name: 'praveen',
-    }
-    console.log(users.name)
-}
+import { Config } from './config'
 
-welcome()
+console.log(Config.PORT)
